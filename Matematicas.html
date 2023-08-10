@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Problema de División</title>
+</head>
+<body>
+    <h1>Problema de División</h1>
+    
+    <p>Calcula el resultado de la siguiente división:</p>
+    
+    <p><span id="dividendo">56</span> ÷ <span id="divisor">8</span> = <input type="number" id="respuesta"> <button onclick="verificar()">Verificar</button></p>
+    
+    <p id="resultado"></p>
+    
+    <script>
+        function verificar() {
+            var dividendo = parseInt(document.getElementById("dividendo").textContent);
+            var divisor = parseInt(document.getElementById("divisor").textContent);
+            var respuesta = parseInt(document.getElementById("respuesta").value);
+            
+            var cociente = dividendo / divisor;
+            cociente = Math.round(cociente * 100) / 100; // Redondear a dos decimales
+            
+            if (respuesta === cociente) {
+                document.getElementById("resultado").textContent = "¡Correcto!";
+            } else {
+                document.getElementById("resultado").textContent = "Incorrecto. Inténtalo nuevamente.";
+            }
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enlace a Otra Página</title>
+</head>
+<body>
+    <h1>Enlace a Otra Página</h1>
+    
+    <p>Haz clic en el enlace para ir a otra página:</p>
+    
+    <a href="pagina libre.html">Ir a Haz clic</a>
+</body>
+</html>
+
+           
+
+
+
